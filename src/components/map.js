@@ -1,19 +1,14 @@
 import React from "react";
 import {GoogleMap, MarkerF} from "@react-google-maps/api";
 import {useMemo} from "react";
-const icon = '{ url: require("../assets/images/drone.svg"), scaledSize: { width: 32, height: 32 } }'
+import { MarkerClusterer } from '@react-google-maps/api';
 function Map() {
-    const center = useMemo(() => ({lat: 44, lng: -80}), []);
+    const center = useMemo(() => ({lat: 51.31, lng: 9.48}), []);
 
     return (
-        <GoogleMap zoom={12} center={center} mapContainerClassName="map-container">
+        <GoogleMap zoom={10} center={center} mapContainerClassName="map-container">
             <MarkerF
-                position={{lat: 44, lng: -80}}
-                icon={icon}
-            />
-            <MarkerF
-                position={{lat: 43, lng: -80}}
-                icon={icon}
+                position={center}
             />
         </GoogleMap>
     );

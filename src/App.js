@@ -4,6 +4,7 @@ import "./assets/css/map.css";
 
 
 function App() {
+    //attach script tag to the index page
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
     });

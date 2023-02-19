@@ -3,7 +3,7 @@ import {useState, useEffect, useMemo} from "react";
 export const useFetchPositions = url => {
 
     /*
-    //todo:use if server create proble sending request
+    //todo:use if server create problem add specif headers sending request
     const requestParams = useMemo(() => {
         return {
             mode: 'cors',
@@ -16,7 +16,7 @@ export const useFetchPositions = url => {
         }
     },[url]);
 
-     */
+    */
 
     const [state, setState] = useState({data: null})
 
@@ -37,7 +37,7 @@ export const useFetchPositions = url => {
                     console.log(error)
                     setState({data: null})
                 })
-        }, 5000)
+        }, 500)
 
         return () => clearInterval(intervalId);
 

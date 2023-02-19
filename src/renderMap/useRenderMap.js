@@ -6,8 +6,6 @@ import vector from "../assets/images/drone.svg"
 
 function useRenderMap (center,markerLocations) {
 
-    console.log('this is rendered with data ', markerLocations);
-
     const google = window.google;
 
     return (

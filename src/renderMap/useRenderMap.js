@@ -4,23 +4,21 @@ import vector from "../assets/images/drone.svg"
 
 
 
-function useRenderMap (center,droneSVGLocations) {
-    const google = window.google;
-    const onLoad = useCallback(
-         (mapInstance)  => {
+function useRenderMap (center,markerLocations) {
 
-        },[]
-    );
+    console.log('this is rendered with data ', markerLocations);
+
+    const google = window.google;
 
     return (
-        <GoogleMap zoom={10} center={center} mapContainerClassName="map-container" onLoad={onLoad}>
+        <GoogleMap zoom={10} center={center} mapContainerClassName="map-container">
             <MarkerClustererF>
                 {
                     (clusterer) =>
-                        droneSVGLocations.map((location) => (
+                        markerLocations.map((location) => (
                             <MarkerF
                                 key={location.id}
-                                position={{ lat: location.lat, lng: location.lng }}
+                                position={{ lat: location.latitude, lng: location.longitude }}
                                 icon={{
                                     url:vector,
                                     scaledSize: new google.maps.Size(100, 100)

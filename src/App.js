@@ -8,6 +8,7 @@ function App() {
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
     });
+
     //return map component after loading
     if(isLoaded){
         return <MapComponent />;

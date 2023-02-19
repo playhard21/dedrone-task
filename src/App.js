@@ -1,5 +1,5 @@
 import {useLoadScript} from "@react-google-maps/api";
-import Map from "./components/map"
+import MapComponent from "./renderMap/MapComponent"
 import "./assets/css/map.css";
 
 
@@ -10,7 +10,7 @@ function App() {
     });
     //return map component after loading
     if(isLoaded){
-        return <Map />;
+        return <MapComponent />;
     }
 }
 

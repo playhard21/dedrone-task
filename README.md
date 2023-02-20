@@ -51,8 +51,8 @@ docker run -p 4050:3000 -d technical-task
 
 Then Click the [URL](http://localhost:4050/), The app should be up and running as shown in the image
 
-![alt image](src/assets/images/app.png)
 
+<img alt src="src/assets/images/app.gif">
 
 ## View The deployed App
 The app is deployed using git-hub pages.

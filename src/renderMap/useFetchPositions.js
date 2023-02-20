@@ -1,25 +1,13 @@
-import {useState, useEffect, useMemo} from "react";
+import {useState, useEffect} from "react";
 
 export const useFetchPositions = url => {
 
-    const requestParams = useMemo(() => {
-        return {
-            mode: 'cors',
-            credentials: 'same-origin',
-            headers: {
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Headers': '*'
-            }
-        }
-    },[url]);
-
-    const [state, setState] = useState({data: null})
+    const [state, setState] = useState({data: null, error: false})
     //assign interval to a variable to clear it.
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setState(state => ({data: state.data}))
-            fetch(url,requestParams)
+            setState(state => ({data: state.data, error: false}))
+            fetch(url)
                 .then(data => data.json())
                 .then(obj =>
                     Object.keys(obj).map(key => {
@@ -28,10 +16,10 @@ export const useFetchPositions = url => {
                         return newData
                     })
                 )
-                .then(newData => setState({data: newData}))
+                .then(newData => setState({data: newData, error: false}))
                 .catch(function (error) {
                     console.log(error)
-                    setState({data: null})
+                    setState({data: null, error: true})
                 })
         }, 500)
 

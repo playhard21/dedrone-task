@@ -1,4 +1,4 @@
-import {useMemo, useEffect} from "react";
+import {useMemo} from "react";
 import renderMap from "./useRenderMap";
 import {useFetchPositions} from "./useFetchPositions";
 

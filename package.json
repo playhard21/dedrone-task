@@ -1,7 +1,7 @@
 {
   "name": "technical-task",
   "version": "0.1.0",
-  "homepage": "https://github.com/playhard21/technical-task",
+  "homepage": "https://playhard21.github.io/technical-task/",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.18.1",

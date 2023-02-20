@@ -1,4 +1,4 @@
-import React, {useCallback} from "react";
+import React from "react";
 import {GoogleMap ,MarkerClustererF, MarkerF} from "@react-google-maps/api";
 import vector from "../assets/images/drone.svg";
 import dedroneLogo from "../assets/images/dedroneLogo.svg"

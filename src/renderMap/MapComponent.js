@@ -3,7 +3,7 @@ import renderMap from "./useRenderMap";
 import {useFetchPositions} from "./useFetchPositions";
 
 
-//todo: change markerF to marker for deployment
+//todo: change markerF to marker for deployment/production
 function MapComponent() {
     //center
     const center = useMemo(() => ({lat: 51.31, lng: 9.48}), []);

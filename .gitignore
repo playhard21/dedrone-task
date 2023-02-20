@@ -8,7 +8,7 @@
 /build
 
 # misc
-.env.development
+.env.local
 
 npm-debug.log*
 

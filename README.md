@@ -28,7 +28,7 @@ Example of the .env.local file
 
 ```dotenv
 REACT_APP_GOOGLE_MAPS_API_KEY="YOUR-API-KEY"
-REACT_APP_POSITIONS_API_URL="https://d407n4zji1.execute-api.eu-central-1.amazonaws.com/api/positions"
+REACT_APP_POSITIONS_API_URL="URL_FOR_POSITION"
 ```
 
 after creating .env.local file correctly , next step is to build docker image

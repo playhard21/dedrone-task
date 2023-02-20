@@ -2,26 +2,10 @@ import {useState, useEffect, useMemo} from "react";
 
 export const useFetchPositions = url => {
 
-    /*
-    //todo:use if server create problem add specif headers sending request
-    const requestParams = useMemo(() => {
-        return {
-            mode: 'cors',
-            credentials: 'same-origin',
-            headers: {
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Headers': '*'
-            }
-        }
-    },[url]);
-
-    */
-
     const [state, setState] = useState({data: null})
-
+    //assign interval to a variable to clear it.
     useEffect(() => {
-        const intervalId = setInterval(() => {  //assign interval to a variable to clear it.
+        const intervalId = setInterval(() => {
             setState(state => ({data: state.data}))
             fetch(url)
                 .then(data => data.json())

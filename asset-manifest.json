@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/technical-task/static/css/main.d09b5131.css",
-    "main.js": "/technical-task/static/js/main.dd661955.js",
+    "main.js": "/technical-task/static/js/main.d2431b3c.js",
     "static/media/drone.svg": "/technical-task/static/media/drone.b1b08017d74ac186720f96d53398ee3b.svg",
     "static/media/dedroneLogo.svg": "/technical-task/static/media/dedroneLogo.bdff27ff54070b985e6676ab91266b2a.svg",
     "index.html": "/technical-task/index.html",
     "main.d09b5131.css.map": "/technical-task/static/css/main.d09b5131.css.map",
-    "main.dd661955.js.map": "/technical-task/static/js/main.dd661955.js.map"
+    "main.d2431b3c.js.map": "/technical-task/static/js/main.d2431b3c.js.map"
   },
   "entrypoints": [
     "static/css/main.d09b5131.css",
-    "static/js/main.dd661955.js"
+    "static/js/main.d2431b3c.js"
   ]
 }

@@ -49,7 +49,10 @@ This is the last step run the image, you can run the image by following command.
 docker run -p 4050:3000 -d technical-task
 ```
 
-Then Click the [URL](http://localhost:4050/), The app should be up and running.
+Then Click the [URL](http://localhost:4050/), The app should be up and running as shown in the image
+
+![alt image](src/assets/images/app.png)
+
 
 ## View The deployed App
 The app is deployed using git-hub pages.

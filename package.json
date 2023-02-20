@@ -1,6 +1,7 @@
 {
-  "name": "dedrone-task",
+  "name": "technical-task",
   "version": "0.1.0",
+  "homepage": "https://github.com/playhard21/technical-task",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.18.1",
@@ -10,6 +11,8 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "technical-task -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -32,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }

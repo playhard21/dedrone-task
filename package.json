@@ -11,12 +11,12 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "technical-task -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

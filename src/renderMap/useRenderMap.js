@@ -4,7 +4,7 @@ import vector from "../assets/images/drone.svg";
 import dedroneLogo from "../assets/images/dedroneLogo.svg"
 
 
-//todo:Get and update MarkerClustererF.imagePath API
+//todo:Get and update MarkerClustererF.imagePath from an API
 //todo:Update animations to show live drone images available drone a specif in location (Can use input box )
 //todo:Find some react animation css library
 function useRenderMap (center,markerLocations) {
@@ -17,6 +17,8 @@ function useRenderMap (center,markerLocations) {
                 imagePath={dedroneLogo}
                 title={"Dedrone"}
                 maxZoom={13}
+
+
                 minimumClusterSize={3}
             >
                 {

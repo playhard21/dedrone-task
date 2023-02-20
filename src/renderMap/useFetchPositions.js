@@ -1,13 +1,20 @@
-import {useState, useEffect} from "react";
+import {useState, useEffect, useMemo} from "react";
 
 export const useFetchPositions = url => {
+    //Avoid cors error while sending request from browser
+    const requestOptions = useMemo(() => {
+        return {
+            method:'GET',
+            redirect: 'follow'
+        }
+    },[url]);
 
     const [state, setState] = useState({data: null, error: false})
     //assign interval to a variable to clear it.
     useEffect(() => {
         const intervalId = setInterval(() => {
             setState(state => ({data: state.data, error: false}))
-            fetch(url)
+            fetch(url,requestOptions)
                 .then(data => data.json())
                 .then(obj =>
                     Object.keys(obj).map(key => {

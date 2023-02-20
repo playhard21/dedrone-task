@@ -50,3 +50,7 @@ docker run -p 4050:3000 -d technical-task
 ```
 
 Then Click the [URL](http://localhost:4050/), The app should be up and running.
+
+## View The deployed App
+The app is deployed using git-hub pages
+To view the deployed project click the [link](https://playhard21.github.io/technical-task/)
